@@ -31,14 +31,14 @@ while(True):
 	except Exception as e:
 		print
 		print
-		print("\033[1mERROR: Please be sure you have replaced <API KEY> with a valid API key from openweathermap.org.\033[0m")
+		print("\033[1mERROR: Please be sure you have replaced <API KEY> with a valid API key from openweathermap.org and have entered a valid city name.\033[0m")
 		sys.exit()
 	
 
 	# check if good response
 	if response.code != 200:
 		print
-		print("ERROR:" + city + " is an invalid city name")
+		print("ERROR: Please be sure you have replaced <API KEY> with a valid API key from openweathermap.org and have entered a valid city name.")
 		sys.exit()
 
 	# convert data to JSON
